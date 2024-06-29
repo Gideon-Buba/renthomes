@@ -4,7 +4,7 @@ import homeImage from "../assets/home-image.png"; // replace with your actual im
 
 const Hero = () => {
   return (
-    <Box sx={{ flexGrow: 1, padding: "50px 0" }}>
+    <Box sx={{ flexGrow: 1, padding: "50px 0", height: "100vh" }}>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={12} md={6}>
           <Typography

@@ -40,7 +40,7 @@ function Services() {
       }}
     >
       <Typography
-        variant="h3"
+        variant="h2"
         sx={{ color: "#475C46", fontWeight: "bold", mb: 2 }}
       >
         See Our Services
@@ -57,7 +57,7 @@ function Services() {
                 p: 4,
                 textAlign: "center",
                 backgroundColor: "#0D4512E5",
-                borderRadius: 2,
+                borderRadius: 8,
                 color: "white",
                 display: "flex",
                 flexDirection: "column",

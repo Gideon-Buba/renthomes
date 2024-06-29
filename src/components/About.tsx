@@ -33,6 +33,7 @@ const About = () => {
           <Box sx={{ display: "flex", gap: 2 }}>
             <Button
               variant="contained"
+              size="large"
               sx={{
                 backgroundColor: "#475C46",
                 borderRadius: 50,
