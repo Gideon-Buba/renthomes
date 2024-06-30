@@ -46,10 +46,7 @@ function Footer() {
             <IconButton href="#" color="inherit">
               <YouTubeIcon sx={{ color: "#475C46" }} />
             </IconButton>
-            <IconButton
-              href="https://github.com/your-github-profile"
-              color="inherit"
-            >
+            <IconButton href="https://github.com/Gideon-Buba" color="inherit">
               <GitHubIcon sx={{ color: "#475C46" }} />
             </IconButton>
           </Box>

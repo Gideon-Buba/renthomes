@@ -26,8 +26,9 @@ const reviews = [
 ];
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
-  width: "350px",
-  height: "350px",
+  width: "100%",
+  maxWidth: "350px",
+  height: "100%",
   borderRadius: "30px 134px 30px 134px",
   border: "8px solid #26582A",
   padding: theme.spacing(4),
@@ -39,7 +40,9 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 
 const Reviews = () => {
   return (
-    <Box sx={{ textAlign: "center", mt: 4, height: "100vh" }}>
+    <Box
+      sx={{ textAlign: "center", mt: 4, minHeight: "100vh", padding: "0 20px" }}
+    >
       <Typography
         variant="h3"
         sx={{ color: "#475C46", fontWeight: "bold", mb: 2 }}
