@@ -5,6 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Footer() {
   return (
@@ -15,8 +16,8 @@ function Footer() {
         mt: 4,
       }}
     >
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} sm={4} textAlign={"left"}>
+      <Grid container spacing={4} justifyContent="space-between">
+        <Grid item xs={12} sm={3} textAlign={"left"}>
           <Typography
             variant="h6"
             component="div"
@@ -32,6 +33,26 @@ function Footer() {
           <Typography variant="body1" sx={{ mt: 2 }}>
             The best and easiest way to rent homes.
           </Typography>
+          <Box sx={{ mt: 2 }}>
+            <IconButton href="#" color="inherit">
+              <FacebookIcon sx={{ color: "#475C46" }} />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <InstagramIcon sx={{ color: "#475C46" }} />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <TwitterIcon sx={{ color: "#475C46" }} />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <YouTubeIcon sx={{ color: "#475C46" }} />
+            </IconButton>
+            <IconButton
+              href="https://github.com/your-github-profile"
+              color="inherit"
+            >
+              <GitHubIcon sx={{ color: "#475C46" }} />
+            </IconButton>
+          </Box>
         </Grid>
         <Grid item xs={12} sm={2} textAlign={"left"}>
           <Typography
@@ -129,34 +150,22 @@ function Footer() {
           <Typography variant="body1" sx={{ mb: 0.5 }}>
             Social media
           </Typography>
-          <Box>
-            <IconButton href="#" color="inherit">
-              <FacebookIcon />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <InstagramIcon />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <TwitterIcon />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <YouTubeIcon />
-            </IconButton>
-          </Box>
         </Grid>
       </Grid>
-      <Typography
-        variant="body2"
-        sx={{ mt: 4, color: "#475C46", fontWeight: "bold" }}
-      >
-        Copyright © 2023 Dscode | All rights reserved
-      </Typography>
-      <Typography
-        variant="body2"
-        sx={{ mt: 1, color: "#475C46", fontWeight: "bold" }}
-      >
-        Designed by AmeniaSabuwala
-      </Typography>
+      <Box sx={{ textAlign: "center", mt: 4 }}>
+        <Typography
+          variant="body2"
+          sx={{ color: "#475C46", fontWeight: "bold" }}
+        >
+          Copyright © 2023 Dscode | All rights reserved
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ mt: 1, color: "#475C46", fontWeight: "bold" }}
+        >
+          Designed by AmeniaSabuwala
+        </Typography>
+      </Box>
     </Box>
   );
 }
