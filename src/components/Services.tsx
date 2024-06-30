@@ -30,7 +30,7 @@ function Services() {
   return (
     <Box
       sx={{
-        height: "100vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -50,7 +50,7 @@ function Services() {
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         {services.map((service, index) => (
-          <Grid item xs={12} md={4} key={index}>
+          <Grid item xs={12} sm={6} md={4} key={index}>
             <Paper
               elevation={1}
               sx={{
@@ -63,7 +63,7 @@ function Services() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                minHeight: "250px", // Ensures all cards are at least 250px tall
+                minHeight: "300px", // Ensures all cards are at least 300px tall
               }}
             >
               {service.icon}
@@ -71,9 +71,9 @@ function Services() {
                 variant="h5"
                 sx={{
                   fontFamily: "Poppins",
-                  fontSize: "44px",
+                  fontSize: "28px",
                   fontWeight: 700,
-                  lineHeight: "66px",
+                  lineHeight: "36px",
                   textAlign: "center",
                   mt: 2,
                   mb: 1,
@@ -85,9 +85,9 @@ function Services() {
                 variant="body1"
                 sx={{
                   fontFamily: "Poppins",
-                  fontSize: "20px",
+                  fontSize: "18px",
                   fontWeight: 500,
-                  lineHeight: "30px",
+                  lineHeight: "24px",
                   textAlign: "center",
                 }}
               >
